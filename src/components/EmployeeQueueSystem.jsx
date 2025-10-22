@@ -6,7 +6,7 @@ export default function EmployeeQueueSystem({ employeeName, onLogout }) {
     const normalizedEmployee = employeeName.trim().toLowerCase();
     const EMPLOYEE_KEY = `restaurantData_${normalizedEmployee}`;
     const WAITLIST_KEY = "restaurantWaitList";
-    const MAX_QUEUE = 5;
+    const MAX_QUEUE = 1000;
 
     const [data, setData] = useState({queue:[], served:[]});
     const [waitList, setWaitList] = useState([]);
